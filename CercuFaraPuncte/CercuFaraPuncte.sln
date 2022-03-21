@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CercuFaraPuncte", "CercuFaraPuncte\CercuFaraPuncte.csproj", "{AB4C5C32-6853-4A48-9493-74D53723D293}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB4C5C32-6853-4A48-9493-74D53723D293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4C5C32-6853-4A48-9493-74D53723D293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4C5C32-6853-4A48-9493-74D53723D293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4C5C32-6853-4A48-9493-74D53723D293}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {552394C7-A4CC-4027-A400-11CB6835A0F4}
+	EndGlobalSection
+EndGlobal
