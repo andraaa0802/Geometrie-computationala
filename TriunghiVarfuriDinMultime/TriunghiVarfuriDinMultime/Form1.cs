@@ -28,7 +28,7 @@ namespace TriunghiVarfuriDinMultime
             Graphics g = e.Graphics;
 
             int n;
-            n = rnd.Next(3,20);
+            n = rnd.Next(3,10);
 
             int[] x = new int[n];
             int[] y = new int[n];
@@ -36,22 +36,22 @@ namespace TriunghiVarfuriDinMultime
             int i,j,k;
             for(i=0;i<n;i++)
             {
-                x[i] = rnd.Next(200);
-                y[i] = rnd.Next(200);
+                x[i] = rnd.Next(300);
+                y[i] = rnd.Next(300);
 
                 g.DrawEllipse(p, x[i], y[i], 2, 2);
             }
 
             double arie, arieMinima=double.MaxValue;
 
-            int x1=0, x2=0, x3=0, y1=0, y2=0, y3=0;
+            int x1=-1, x2=-1, x3=-1, y1=-1, y2=-1, y3=-1;
         
             for(i=0;i<n-2;i++)
                 for(j=i+1;j<n-1;j++)
                     for(k=j+1;k<n;k++)
                     {
-                        arie = 0.5 *( Math.Abs(x[i] * y[j] + x[i] * y[k] + x[k] * y[i] - x[k] * y[j] - x[i] * y[k] - x[j] * y[i]));
-                        if (arie<arieMinima)
+                        arie = 0.5 * (Math.Abs(x[i] * y[j] + x[j] * y[k] + x[k] * y[i] - x[k] * y[j] - x[i] * y[k] - x[j] * y[i]));
+                        if (arie<arieMinima && arie!=0)
                         {
                             arieMinima = arie;
                             x1 = x[i]; x2 = x[j]; x3 = x[k];
