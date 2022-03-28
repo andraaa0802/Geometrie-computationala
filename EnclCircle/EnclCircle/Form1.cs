@@ -44,14 +44,7 @@ namespace EnclCircle
                 x_centru = (x.Min() + x.Max()) / 2;
                 y_centru = (y.Min() + y.Max()) / 2;
 
-                float X = x_centru - raza;
-                float Y = y_centru - raza;
-                float width = 2 * raza;
-                float height = 2 * raza;
-
-                g.DrawEllipse(p2, X, Y, width, height);
-
-
+                g.DrawEllipse(p2, x_centru - raza, y_centru - raza, 2*raza, 2*raza);
             }
         }
     }
